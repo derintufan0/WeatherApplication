@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YdGY7XYm467mZdVmROeNP+xXOVNLQA3VfW7hB2KZOkaehUtH145ayKwOTqU1SHzPPk6qj08cum8HuESz29K/Rw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kaano\\AppData\\Local\\Temp\\Rar$DIa17852.10395\\WeatherApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kaano\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

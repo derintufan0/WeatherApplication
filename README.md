@@ -1,32 +1,19 @@
-# Derin Tufan - 20220108065
-
 # WeatherApplication
 
-Bu C# konsol uygulaması, belirli şehirler için hava durumu bilgilerini almak ve ekrana yazdırmak amacıyla geliştirilmiştir.Programın ana sınıfları şunlardır:
+##### Bu C# konsol uygulaması, belirli şehirler için hava durumu bilgilerini almak ve ekrana yazdırmak amacıyla geliştirilmiştir. Aşağıda, uygulamanın temel bileşenleri ve kullanım adımları açıklanmaktadır.
 
-# WeatherData:
-
-- Location: Hava durumunu görmek istediğimiz yerin şehir olarak konumunu temsil eder.
-
-- Conditions: Hava durumu açıklamasını içerir.
-
-- Temperature: Sıcaklık bilgisini içerir.
-
-- Humidity: Nem oranını içerir.
-
--WindSpeed: Rüzgar hızını içerir.
-
-# WeatherFetcher:
-
-- HttpClient kullanarak bir hava durumu API'sine bağlantı sağlar. 
-
-- GetWeatherInfo metodu, belirli bir şehir için hava durumu bilgilerini alır ve bu bilgileri WeatherData nesnesine dönüştürür.
-
-# WeatherReporter:
-
-- WeatherData nesnesini alır ve bilgileri konsola yazdırır.
-
-# WeatherApp:
-
-- Uygulamayı başlatır.
-- WeatherFetcher ve WeatherReporter sınıflarını kullanarak belirli şehirlerin hava durumu bilgilerini alır ve ekrana yazdırır.
+## Bileşenler  
+#### WeatherInfo Sınıfı:
+-City: Şehir adını temsil eder.  
+-Description: Hava durumu açıklamasını içerir.    
+-Temperature: Sıcaklık bilgisini içerir.  
+-Humidity: Nem oranını içerir.  
+-Wind: Rüzgar hızını içerir.  
+### WeatherService Sınıfı:
+-HttpClient kullanarak bir hava durumu API'sine bağlantı sağlar.
+-GetWeather metodu, belirli bir şehir için hava durumu bilgilerini alır ve bu bilgileri WeatherInfo nesnesine dönüştürerek geri döner.  
+### WeatherPrinter Sınıfı:
+-WeatherInfo nesnesini alır ve bu bilgileri konsola yazdırır.
+### Program Sınıfı:
+-Main metodu, uygulamayı başlatır.
+-WeatherService ve WeatherPrinter sınıflarını kullanarak belirli şehirlerin hava durumu bilgilerini alır ve ekrana yazdırır.
